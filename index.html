@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      href="https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/275854716_1009516859998712_3360791562563963516_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=174925&_nc_ohc=Nd-x8LBVkfEAX-8j_3d&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfCE12FbrIzhS4MFFIpLnp91XXbAS27AcV3yTsAqHtNIHw&oe=640ADB19"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dear Bống ❤️</title>
+    
+
+
+  <body>
+    <div class="wrapper">
+      <div class="loader">
+        <div class="cardHover">
+          <div class="inner one" style="--i: 1"></div>
+          <div class="inner two" style="--i: 1"></div>
+          <div class="inner three" style="--i: 1"></div>
+          <div class="box-heart">
+            <div class="heart"></div>
+          </div>
+        </div>
+      </div>
+      <button><p>Ấn đây nè</p></button>
+      <div class="content">
+        <i class="fa-solid fa-xmark"></i>
+        <h1>Gửi Bống </h1>
+       <p>Hôm nay , ngày 20-10 là ngày người phụ nữ nào cũng có quà hết . Tất nhiền là cả e cũng phải có rồi hí hí !!!. Dạo này a bận không có dành được nhiều thời gian cho e , không đèo e đi chơi được, không thể chuẩn bị quà chu đáo được cho e .Anh chúc em có 1 ngày 20/10 vui vẻ , luôn là 1 cô gái xinh đẹp ,yêu đời ko khóc nhè như hôm qua nữa .</p>
+       <p> Note:-1 bài tập nhé !!!</p>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelector(".wrapper"), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.25,
+      gyroscopeMinAngleX: -45,
+    });
+    var btn = document.querySelector("button");
+    var closeBtn = document.querySelector(".fa-xmark");
+    btn.addEventListener("click", () => {
+      document.querySelector(".wrapper").classList.add("active");
+      btn.style.display = "none";
+    });
+    closeBtn.addEventListener("click", () => {
+      document.querySelector(".wrapper").classList.remove("active");
+      btn.style.display = "block";
+    });
+  </script>
+<style>
+	#snowflakeContainer{position:absolute;left:0px;top:0px;}
+	.snowflake{padding-left:15px;font-size:14px;line-height:24px;position:fixed;color:#ebebeb;user-select:none;z-index:1000;-moz-user-select:none;-ms-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;}
+	.snowflake:hover {cursor:default}
+</style>
+<div id='snowflakeContainer'>
+<p class='snowflake'>🌹🌷</p>
+</div>
+<script>
+	//<![CDATA[
+	var requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var transforms=["transform","msTransform","webkitTransform","mozTransform","oTransform"];var transformProperty=getSupportedPropertyName(transforms);var snowflakes=[];var browserWidth;var browserHeight;var numberOfSnowflakes=50;var resetPosition=false;function setup(){window.addEventListener("DOMContentLoaded",generateSnowflakes,false);window.addEventListener("resize",setResetFlag,false)}setup();function getSupportedPropertyName(b){for(var a=0;a<b.length;a++){if(typeof document.body.style[b[a]]!="undefined"){return b[a]}}return null}function Snowflake(b,a,d,e,c){this.element=b;this.radius=a;this.speed=d;this.xPos=e;this.yPos=c;this.counter=0;this.sign=Math.random()<0.5?1:-1;this.element.style.opacity=0.5+Math.random();this.element.style.fontSize=4+Math.random()*30+"px"}Snowflake.prototype.update=function(){this.counter+=this.speed/5000;this.xPos+=this.sign*this.speed*Math.cos(this.counter)/40;this.yPos+=Math.sin(this.counter)/40+this.speed/30;setTranslate3DTransform(this.element,Math.round(this.xPos),Math.round(this.yPos));if(this.yPos>browserHeight){this.yPos=-50}};function setTranslate3DTransform(a,c,b){var d="translate3d("+c+"px, "+b+"px, 0)";a.style[transformProperty]=d}function generateSnowflakes(){var b=document.querySelector(".snowflake");var h=b.parentNode;browserWidth=document.documentElement.clientWidth;browserHeight=document.documentElement.clientHeight;for(var d=0;d<numberOfSnowflakes;d++){var j=b.cloneNode(true);h.appendChild(j);var e=getPosition(50,browserWidth);var a=getPosition(50,browserHeight);var c=5+Math.random()*40;var g=4+Math.random()*10;var f=new Snowflake(j,g,c,e,a);snowflakes.push(f)}h.removeChild(b);moveSnowflakes()}function moveSnowflakes(){for(var b=0;b<snowflakes.length;b++){var a=snowflakes[b];a.update()}if(resetPosition){browserWidth=document.documentElement.clientWidth;browserHeight=document.documentElement.clientHeight;for(var b=0;b<snowflakes.length;b++){var a=snowflakes[b];a.xPos=getPosition(50,browserWidth);a.yPos=getPosition(50,browserHeight)}resetPosition=false}requestAnimationFrame(moveSnowflakes)}function getPosition(b,a){return Math.round(-1*b+Math.random()*(a+2*b))}function setResetFlag(a){resetPosition=true};
+	//]]>
+</script>
+<audio id="myAudio" src="ccr.mp3"></audio>
+   <script>
+        // Lấy đối tượng audio
+        const audio = document.getElementById("myAudio");
+
+        // Kiểm tra nếu trình duyệt hỗ trợ tự động phát
+        if (audio.play) {
+            // Bắt đầu phát nhạc
+            audio.play();
+
+            // Lặp lại nhạc khi kết thúc
+            audio.addEventListener('ended', () => {
+                audio.currentTime = 0;
+                audio.play(); 
+            });
+        } else {
+            // Hiển thị thông báo nếu trình duyệt không hỗ trợ tự động phát
+            console.log("Trình duyệt của bạn không hỗ trợ tự động phát nhạc.");
+        }
+    </script>
+
+
+
+
+</html>
